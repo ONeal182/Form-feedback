@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	
+</head>
+<body>
+	
+	<section class="sectForm">
+		<div class="prev"><input type="button" value="← Вернуться" style='display: none'></div>
+	<div class="content">
+		<form class="formApp">
+			<div class="firstForm" style="display: block;">
+				<div class="wrapper">
+				<h1>Заказать забор</h1>
+				<div class="firstForm__length">
+					<p>Длина забора</p>
+					<div class="firstForm__length__input">
+					<input type="text" id="input" class="length1" name="length" value="0" >
+					<p>метров</p>
+					<i class="hide fa fa-check" id="1" aria-hidden="true"></i>
+					</div>
+					<p class="infoError1" style="display: none">неверно заполненое поле</p>
+				</div>
+				<div class="firstForm__height">
+					<p>Высота забора</p>
+					<div class="firstForm__length__input">
+						<input type="text" id="input" name="height" class="height1" value="0">
+						<p>метров</p>
+						<i class="hide fa fa-check" id="2"  aria-hidden="true"></i>
+						
+					</div>
+					<p class="infoError2" style="display: none">неверно заполненое поле</p>
+					
+				</div>
+				<div class="firstForm__type">
+					<p>Материал забора</p>
+					<div class="firstForm__type__select">
+					<select class="select" name="" id="">
+						<p>Материал забора</p>
+						<option value="400" data-id="профнастила">Профнастил 400 ₽ за м²</option>
+						<option value="500" data-id="модуля">Модули 500 ₽ за м²</option>
+						<option value="700" data-id="бетона">Бетон 700 ₽ за м²</option>
+						<option value="200" data-id="сетки">Сетка 200 ₽ за м²</option>
+					</select>
+					</div>
+
+				</div>
+				<div class="firstForm__checkbox">
+						<input class="checkbox" name="checkbox" type="checkbox" >
+						<p>Нужен монтаж</p>
+				</div>
+				<div class="firstForm__button">
+					<p>Сумма заказа: <span class="price">0 ₽</span></p>
+					<input class="next" type="button"src="/img/button.png" >
+				</div>
+				</div>
+			</div>
+			<div class="secondForm" style="display: none">
+				<h1>Пожалуйста, представьтесь</h1>
+			<div class="wrapper">
+				
+				<div class="secondForm__name" >
+						<p>Ваша имя</p>
+						<input class="name secondForm__input" type="text" name="name" id="">
+						<i class="hide fa fa-check" aria-hidden="true"></i>
+
+					</div>
+					
+					<div class="secondForm__email">
+						<p>Электронаая почта</p>
+						<input class="email secondForm__input" type="email" name="email" id="">
+						<i class="hide fa fa-check" aria-hidden="true"></i>
+					</div>
+					
+					<div class="secondForm__phone">
+						<p>Телефон</p>
+						<input class="phone secondForm__input" type="text" name="phone" id="">
+						<i class="hide fa fa-check" aria-hidden="true"></i>
+					</div>
+					
+					<div class="secondForm__button">
+					<p class="info"></p>
+
+					<input class="submitForm" type="submit"  value="" >
+					</div>
+				</div>
+			</div>
+
+		</form>
+
+		<div class="answer" style="display: none;">
+			<div class="wrapper">
+				
+			</div>
+		</div>
+	</div>
+	
+	</section>
+	</body>
+</html>
